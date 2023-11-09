@@ -1,1 +1,3 @@
-# MikulasStastny.github.io
+# Webové stránky BOS
+
+Vítejte!
