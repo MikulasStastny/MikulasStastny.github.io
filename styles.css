@@ -4,8 +4,7 @@ body {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     background-color: white;
     width: 100%;
     height: 60px;
@@ -15,14 +14,18 @@ body {
 }
 
 .navbar-expanded {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     background-color: white;
     width: 100%;
-    height: 120px;
+    height: 210px;
     position: fixed;
     top: 0;
     transition: 0.2s;
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu {
@@ -50,6 +53,28 @@ body {
     transform: translate(0, -10px) rotate(45deg);
 }
 
+.navbar-links-box {
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.navbar-link {
+    font-size: large;
+    text-decoration: none;
+    color: #22092C;
+    transition: 0.2s;
+    margin: 7px;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+    color: #872341;
+    transition: 0.2s;
+}
+
+
 .content {
     margin-top: 60px;
     width: 100%;
@@ -58,17 +83,27 @@ body {
 .content-container {
     width: auto;
     height: 600px;
-    z-index: -1;
     padding: 40px;
 }
 
 .brand {
     font-size: xx-large;
-    margin: 14px 0px 10px 20px;
+    margin: 13px 0px 10px 20px;
 }
 
 .brand-description {
     font-size: xxx-large;
     text-align: right;
     padding: 230px 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-links-box {
+        flex-direction: row;
+        align-items: normal;
+    }
+
+    .navbar-expanded {
+        height: 120px;
+    }
 }
