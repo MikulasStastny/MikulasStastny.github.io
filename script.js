@@ -13,3 +13,7 @@ function toggleNavbar(menu_container) {
         setTimeout(() => { links.style.display = "none"; }, 50);
     }
 }
+
+function openFb() {
+    open("https://www.facebook.com/divadlo.blucina");
+}
