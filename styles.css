@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
 }
 
 .navbar {
@@ -100,11 +101,10 @@ body {
 .footer {
     background-color: black;
     color: white;
-    font-size: large;
     display: flex;
     flex-flow: column wrap;
     height: fit-content;
-    padding: 40px;
+    padding: 30px;
 }
 
 .footer-info {
@@ -117,6 +117,7 @@ body {
 
 .footer-social {
     align-self: flex-end;
+    margin: 8px;
 }
 
 .footer-copyright {
@@ -134,6 +135,18 @@ body {
     }
 
     .navbar-expanded {
-        height: 120px;
+        height: 105px;
+    }
+
+    .footer {
+        padding: 40px;
+    }
+
+    .footer-social {
+        margin: 0px;
+    }
+
+    body {
+        font-size: large;
     }
 }
